@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="one-third column">&nbsp;</div>
+    <div class="one-third column">
+      <h3>Register</h3>
+      <ul>
+        <% if(typeof errors != 'undefined') { errors.forEach(error => {%>
+        <li><%= error.message %></li>
+        <% })} %>
+      </ul>
+
+      <form action="/users/register" method="post">
+        <div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required="required"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Address"
+            required="required"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required="required"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required="required"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="cpassword"
+            id="cpassword"
+            placeholder="Confirm Password"
+            required="required"
+          />
+        </div>
+        <div>
+          <input class="button-primary" type="submit" value="Register" />
+        </div>
+        <a href="/">Already Registered? Login Here</a>
+      </form>
+    </div>
+    <div class="one-third column">&nbsp;</div>
+  </body>
+</html>
