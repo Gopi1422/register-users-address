@@ -4,9 +4,8 @@ A NodeJS app where users can register and store their addresses in separate tabl
 
 * There are two tables: User and Address. 
 * There will be one to many relationships between users and addresses. 
-
-**Server:** Node JS, Express JS <br>
-**Database:** Postgres (Relational Database)
+* **Server:** Node JS, Express JS
+* **Database:** Postgres (Relational Database)
 
 ## Run Locally
 
