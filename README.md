@@ -1,10 +1,11 @@
 # Register Users and their Addresses with Passport Login
 
 A NodeJS app where users can register and store their addresses in separate table (one to many relationship) with passport authentication. 
-There are two tables: User and Address. 
-There will be one to many relationships between users and addresses. 
 
-**Server:** Node JS, Express JS
+* There are two tables: User and Address. 
+* There will be one to many relationships between users and addresses. 
+
+**Server:** Node JS, Express JS <br>
 **Database:** Postgres (Relational Database)
 
 ## Run Locally
